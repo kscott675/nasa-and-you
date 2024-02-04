@@ -4,9 +4,136 @@
     <title>Sinatra Template</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+      :root {
+        --bs-btn-color: #fff;
+        --bs-btn-bg: #1a1a1a;
+        --bs-btn-border-color: #1a1a1a;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: #161616;
+        --bs-btn-hover-border-color: #151515;
+        --bs-btn-focus-shadow-rgb: 60, 60, 60;
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: #151515;
+        --bs-btn-active-border-color: #141414;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: #fff;
+        --bs-btn-disabled-bg: #1a1a1a;
+        --bs-btn-disabled-border-color: #1a1a1a;
+      }
+
+      * {
+      font-family: 'Space Mono', monospace;
+      letter-spacing:2px;
+      }
+      header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 28px;
+      }
+
+      h1 {
+        border: 3px solid #1a1a1a;
+        padding: 30px;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        height: 100vh;
+        padding: 10px;
+        margin: 10px;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;/* Center text within button */
+      }
+      button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        font-size: 15px;
+        color: var(--bs-btn-color);
+        background-color: var(--bs-btn-bg);
+        border: 1px solid var(--bs-btn-border-color);
+        padding: 10px 20px; /* Adjust padding as needed */
+        cursor: pointer; /* Add cursor style for interaction */
+        transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Smooth transition effect */
+
+        /* Hover styles */
+        &:hover {
+          color: var(--bs-btn-hover-color);
+          background-color: var(--bs-btn-hover-bg);
+          border: 1px solid var(--bs-btn-hover-border-color);
+          /* Add other styles for hover state */
+        }
+
+        /* Focus styles */
+        &:focus {
+          outline: none; /* Remove default focus outline */
+          box-shadow: 0 0 5px rgba(var(--bs-btn-focus-shadow-rgb), 0.5);
+          /* Add other styles for focus state */
+        }
+
+        /* Active (clicked) styles */
+        &:active {
+          color: var(--bs-btn-active-color);
+          background-color: var(--bs-btn-active-bg);
+          border: 1px solid var(--bs-btn-active-border-color);
+          box-shadow: var(--bs-btn-active-shadow);
+          /* Add other styles for active state */
+        }
+
+        /* Disabled styles */
+        &:disabled {
+          color: var(--bs-btn-disabled-color);
+          background-color: var(--bs-btn-disabled-bg);
+          border: 1px solid var(--bs-btn-disabled-border-color);
+          cursor: not-allowed;
+          /* Add other styles for disabled state */
+        }
+      }
+
+      #more-content {
+        display: none;
+      }
+
+      .text {
+        font-size: 16px;
+        margin: 0 0 1rem;
+      }
+
+      #img {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        max-width: 50%
+        min-width: 50%
+      }
+      footer {
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
   </head>
 
   <body>
+    <header>NASA + You</header>
+
+    <footer>
+      <p>Developed By: Kiowa Scott 🔭</p>
+    </footer>
     <%= yield %>
   </body>
 </html>
