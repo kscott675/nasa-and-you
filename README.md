@@ -1,6 +1,6 @@
-# NASA Birthday Explorer App
+# NASA + You
 
-Welcome to the NASA Birthday Explorer App! 🚀✨
+Welcome to the NASA + You App! 🚀✨
 
 ## Overview
 
@@ -8,14 +8,14 @@ This app allows you to discover a captivating photo taken by NASA on your birthd
 
 ## How to Use
 
-1. **Input Your Birthday:**
+1. **Create a Codespace and Run the Following Commands:**
+   
+      `bundle install`
+      `bin/dev`
+3. **Input Your Birthday:**
    - Open the app and navigate to the input section.
-   - Enter your birthdate in the provided field (MM-DD format).
 
-2. **Discover NASA's Snapshot:**
-   - Click the "Explore" button to retrieve a stunning image taken by NASA on your special day.
-
-3. **Explore the Universe:**
+4. **Explore the Universe:**
    - Marvel at the breathtaking photo, and read the accompanying description to learn more about the celestial wonders captured by NASA.
 
 ## Features
@@ -29,35 +29,10 @@ This app allows you to discover a captivating photo taken by NASA on your birthd
 - **Easy-to-Use Interface:**
   - The intuitive design ensures a seamless and enjoyable user experience.
 
-## Technologies Used
-
-- **NASA API:**
-  - The app leverages the NASA API to fetch and display captivating images.
-
-- **HTML, CSS, JavaScript:**
-  - The front-end is built using standard web technologies to provide a responsive and interactive interface.
-
-## How to Run Locally
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/nasa-birthday-explorer.git
-   ```
-
-2. Open the `index.html` file in your web browser.
-
-3. Input your birthdate and explore the universe!
-
 ## Credits
 
 - Discovery Partners Institute
 - **NASA API:**
+  - The app leverages the NASA API to fetch and display captivating images.
   - [NASA Open APIs](https://api.nasa.gov/)
 
-
-## Feedback
-
-If you have any feedback, suggestions, or encounter issues while using the app, feel free to [submit an issue](https://github.com/your-username/nasa-birthday-explorer/issues). We appreciate your input!
-
-Enjoy exploring the cosmos on your special day with the NASA Birthday Explorer App! 🌌🎉
