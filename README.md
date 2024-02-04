@@ -8,13 +8,12 @@ This app allows you to discover a captivating photo taken by NASA on your birthd
 
 ## How to Use
 
-1. **Create a Codespace and Run the Following Commands:**
-      $ bundle install
-      $ bin/dev
-3. **Input Your Birthday:**
+1. **Navigate to the site:**
+   [NASA + You](https://nasa-and-you.onrender.com/)
+2. **Input Your Birthday:**
    - Open the app and navigate to the input section.
 
-4. **Explore the Universe:**
+3. **Explore the Universe:**
    - Marvel at the breathtaking photo, and read the accompanying description to learn more about the celestial wonders captured by NASA.
 
 ## Features
@@ -34,3 +33,4 @@ This app allows you to discover a captivating photo taken by NASA on your birthd
 - **NASA API:**
   - The app leverages the NASA API to fetch and display captivating images.
   - [NASA Open APIs](https://api.nasa.gov/)
+
