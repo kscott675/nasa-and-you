@@ -93,8 +93,7 @@ GEM
       coderay (~> 1.1)
       method_source (~> 1.0)
     public_suffix (5.0.4)
-    puma (5.6.8)
-      nio4r (~> 2.0)
+    puma (6.0)
     racc (1.7.3)
     rack (3.0.9)
     rack-protection (4.0.0)
@@ -186,7 +185,7 @@ DEPENDENCIES
   grade_runner
   i18n
   pry
-  puma (~> 5.0)
+  puma
   rspec
   rspec-html-matchers
   sinatra
